@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37282BA62356BE5F00D596B3 /* MJRConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37282BA52356BE5F00D596B3 /* MJRConcurrentOperation.m */; };
+		37282BA92356C94200D596B3 /* MJRFetchPhotoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37282BA82356C94200D596B3 /* MJRFetchPhotoOperation.m */; };
+		37282BAD2356F3AF00D596B3 /* NSURL+MJRHTTPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 37282BAC2356F3AF00D596B3 /* NSURL+MJRHTTPS.m */; };
+		375F896423550D37002C27D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F896323550D37002C27D8 /* AppDelegate.m */; };
+		375F896723550D37002C27D8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F896623550D37002C27D8 /* SceneDelegate.m */; };
+		375F896D23550D37002C27D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375F896B23550D37002C27D8 /* Main.storyboard */; };
+		375F896F23550D39002C27D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375F896E23550D39002C27D8 /* Assets.xcassets */; };
+		375F897223550D39002C27D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375F897023550D39002C27D8 /* LaunchScreen.storyboard */; };
+		375F897523550D39002C27D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F897423550D39002C27D8 /* main.m */; };
+		375F897D23551798002C27D8 /* RoverPhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F897C23551798002C27D8 /* RoverPhotosCollectionViewController.swift */; };
+		375F898023551861002C27D8 /* RoverPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F897F23551861002C27D8 /* RoverPhotoCollectionViewCell.m */; };
+		375F898823551AEF002C27D8 /* Astronomy_ObjcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F898723551AEF002C27D8 /* Astronomy_ObjcTests.swift */; };
+		375F899B23551FB8002C27D8 /* MJRMarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F899A23551FB8002C27D8 /* MJRMarsRoverClient.m */; };
+		375F899E23551FD2002C27D8 /* MJRMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F899D23551FD2002C27D8 /* MJRMarsRover.m */; };
+		375F89A4235522F5002C27D8 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F89A3235522F5002C27D8 /* Camera.swift */; };
+		375F89AA2355596E002C27D8 /* MJRPhotoReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F89A92355596E002C27D8 /* MJRPhotoReference.m */; };
+		375F89B223557D2A002C27D8 /* Astronomy_ObjcNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F89B123557D2A002C27D8 /* Astronomy_ObjcNetworkTests.m */; };
+		375F89BB2355AD81002C27D8 /* Rover.json in Resources */ = {isa = PBXBuildFile; fileRef = 375F89BA2355AD81002C27D8 /* Rover.json */; };
+		375F89BE2356289D002C27D8 /* MJRCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F89BD2356289D002C27D8 /* MJRCache.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		375F898A23551AEF002C27D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 375F895723550D37002C27D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375F895E23550D37002C27D8;
+			remoteInfo = "Astronomy-Objc";
+		};
+		375F89B423557D2A002C27D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 375F895723550D37002C27D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375F895E23550D37002C27D8;
+			remoteInfo = "Astronomy-Objc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37282BA42356BE5F00D596B3 /* MJRConcurrentOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRConcurrentOperation.h; sourceTree = "<group>"; };
+		37282BA52356BE5F00D596B3 /* MJRConcurrentOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRConcurrentOperation.m; sourceTree = "<group>"; };
+		37282BA72356C94200D596B3 /* MJRFetchPhotoOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRFetchPhotoOperation.h; sourceTree = "<group>"; };
+		37282BA82356C94200D596B3 /* MJRFetchPhotoOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRFetchPhotoOperation.m; sourceTree = "<group>"; };
+		37282BAB2356F3AF00D596B3 /* NSURL+MJRHTTPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+MJRHTTPS.h"; sourceTree = "<group>"; };
+		37282BAC2356F3AF00D596B3 /* NSURL+MJRHTTPS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MJRHTTPS.m"; sourceTree = "<group>"; };
+		375F895F23550D37002C27D8 /* Astronomy-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astronomy-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		375F896223550D37002C27D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		375F896323550D37002C27D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		375F896523550D37002C27D8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		375F896623550D37002C27D8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		375F896C23550D37002C27D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		375F896E23550D39002C27D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		375F897123550D39002C27D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		375F897323550D39002C27D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375F897423550D39002C27D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		375F897B23551797002C27D8 /* Astronomy-Objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Astronomy-Objc-Bridging-Header.h"; sourceTree = "<group>"; };
+		375F897C23551798002C27D8 /* RoverPhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		375F897E23551861002C27D8 /* RoverPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoverPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		375F897F23551861002C27D8 /* RoverPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoverPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		375F898523551AEF002C27D8 /* Astronomy-ObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Astronomy-ObjcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		375F898723551AEF002C27D8 /* Astronomy_ObjcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronomy_ObjcTests.swift; sourceTree = "<group>"; };
+		375F898923551AEF002C27D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375F899923551FB8002C27D8 /* MJRMarsRoverClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRMarsRoverClient.h; sourceTree = "<group>"; };
+		375F899A23551FB8002C27D8 /* MJRMarsRoverClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRMarsRoverClient.m; sourceTree = "<group>"; };
+		375F899C23551FD2002C27D8 /* MJRMarsRover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRMarsRover.h; sourceTree = "<group>"; };
+		375F899D23551FD2002C27D8 /* MJRMarsRover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRMarsRover.m; sourceTree = "<group>"; };
+		375F89A3235522F5002C27D8 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		375F89A82355596E002C27D8 /* MJRPhotoReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRPhotoReference.h; sourceTree = "<group>"; };
+		375F89A92355596E002C27D8 /* MJRPhotoReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRPhotoReference.m; sourceTree = "<group>"; };
+		375F89AF23557D2A002C27D8 /* Astronomy-ObjcNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Astronomy-ObjcNetworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		375F89B123557D2A002C27D8 /* Astronomy_ObjcNetworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Astronomy_ObjcNetworkTests.m; sourceTree = "<group>"; };
+		375F89B323557D2A002C27D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375F89B923557D6D002C27D8 /* LSIFileHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIFileHelper.h; sourceTree = "<group>"; };
+		375F89BA2355AD81002C27D8 /* Rover.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rover.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		375F89BC2356289D002C27D8 /* MJRCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRCache.h; sourceTree = "<group>"; };
+		375F89BD2356289D002C27D8 /* MJRCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRCache.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		375F895C23550D37002C27D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375F898223551AEF002C27D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375F89AC23557D2A002C27D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37282BA32356BE3300D596B3 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				37282BA42356BE5F00D596B3 /* MJRConcurrentOperation.h */,
+				37282BA52356BE5F00D596B3 /* MJRConcurrentOperation.m */,
+				37282BA72356C94200D596B3 /* MJRFetchPhotoOperation.h */,
+				37282BA82356C94200D596B3 /* MJRFetchPhotoOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		37282BAA2356F37500D596B3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37282BAB2356F3AF00D596B3 /* NSURL+MJRHTTPS.h */,
+				37282BAC2356F3AF00D596B3 /* NSURL+MJRHTTPS.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		375F895623550D37002C27D8 = {
+			isa = PBXGroup;
+			children = (
+				375F896123550D37002C27D8 /* Astronomy-Objc */,
+				375F896E23550D39002C27D8 /* Assets.xcassets */,
+				375F897423550D39002C27D8 /* main.m */,
+				375F898623551AEF002C27D8 /* Astronomy-ObjcTests */,
+				375F89B023557D2A002C27D8 /* Astronomy-ObjcNetworkTests */,
+				375F896023550D37002C27D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		375F896023550D37002C27D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				375F895F23550D37002C27D8 /* Astronomy-Objc.app */,
+				375F898523551AEF002C27D8 /* Astronomy-ObjcTests.xctest */,
+				375F89AF23557D2A002C27D8 /* Astronomy-ObjcNetworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		375F896123550D37002C27D8 /* Astronomy-Objc */ = {
+			isa = PBXGroup;
+			children = (
+				37282BA32356BE3300D596B3 /* Operations */,
+				375F899523551BEF002C27D8 /* Networking */,
+				375F899423551BE2002C27D8 /* Model */,
+				375F899023551B2A002C27D8 /* Views */,
+				375F899223551B77002C27D8 /* ViewControllers */,
+				375F898F23551B1C002C27D8 /* Storyboards */,
+				37282BAA2356F37500D596B3 /* Helpers */,
+				375F899123551B3B002C27D8 /* Resources */,
+				375F899323551B98002C27D8 /* BridgingHeader */,
+			);
+			path = "Astronomy-Objc";
+			sourceTree = "<group>";
+		};
+		375F898623551AEF002C27D8 /* Astronomy-ObjcTests */ = {
+			isa = PBXGroup;
+			children = (
+				375F898723551AEF002C27D8 /* Astronomy_ObjcTests.swift */,
+				375F898923551AEF002C27D8 /* Info.plist */,
+			);
+			path = "Astronomy-ObjcTests";
+			sourceTree = "<group>";
+		};
+		375F898F23551B1C002C27D8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				375F896B23550D37002C27D8 /* Main.storyboard */,
+				375F897023550D39002C27D8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		375F899023551B2A002C27D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				375F897E23551861002C27D8 /* RoverPhotoCollectionViewCell.h */,
+				375F897F23551861002C27D8 /* RoverPhotoCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		375F899123551B3B002C27D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				375F897323550D39002C27D8 /* Info.plist */,
+				375F896223550D37002C27D8 /* AppDelegate.h */,
+				375F896323550D37002C27D8 /* AppDelegate.m */,
+				375F896523550D37002C27D8 /* SceneDelegate.h */,
+				375F896623550D37002C27D8 /* SceneDelegate.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		375F899223551B77002C27D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				375F897C23551798002C27D8 /* RoverPhotosCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		375F899323551B98002C27D8 /* BridgingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				375F897B23551797002C27D8 /* Astronomy-Objc-Bridging-Header.h */,
+			);
+			path = BridgingHeader;
+			sourceTree = "<group>";
+		};
+		375F899423551BE2002C27D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				375F899C23551FD2002C27D8 /* MJRMarsRover.h */,
+				375F899D23551FD2002C27D8 /* MJRMarsRover.m */,
+				375F89A82355596E002C27D8 /* MJRPhotoReference.h */,
+				375F89A92355596E002C27D8 /* MJRPhotoReference.m */,
+				375F89A3235522F5002C27D8 /* Camera.swift */,
+				375F89BC2356289D002C27D8 /* MJRCache.h */,
+				375F89BD2356289D002C27D8 /* MJRCache.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		375F899523551BEF002C27D8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				375F899923551FB8002C27D8 /* MJRMarsRoverClient.h */,
+				375F899A23551FB8002C27D8 /* MJRMarsRoverClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		375F89B023557D2A002C27D8 /* Astronomy-ObjcNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				375F89B123557D2A002C27D8 /* Astronomy_ObjcNetworkTests.m */,
+				375F89B323557D2A002C27D8 /* Info.plist */,
+				375F89B923557D6D002C27D8 /* LSIFileHelper.h */,
+				375F89BA2355AD81002C27D8 /* Rover.json */,
+			);
+			path = "Astronomy-ObjcNetworkTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		375F895E23550D37002C27D8 /* Astronomy-Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375F897823550D39002C27D8 /* Build configuration list for PBXNativeTarget "Astronomy-Objc" */;
+			buildPhases = (
+				375F895B23550D37002C27D8 /* Sources */,
+				375F895C23550D37002C27D8 /* Frameworks */,
+				375F895D23550D37002C27D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Astronomy-Objc";
+			productName = "Astronomy-Objc";
+			productReference = 375F895F23550D37002C27D8 /* Astronomy-Objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		375F898423551AEF002C27D8 /* Astronomy-ObjcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375F898C23551AEF002C27D8 /* Build configuration list for PBXNativeTarget "Astronomy-ObjcTests" */;
+			buildPhases = (
+				375F898123551AEF002C27D8 /* Sources */,
+				375F898223551AEF002C27D8 /* Frameworks */,
+				375F898323551AEF002C27D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				375F898B23551AEF002C27D8 /* PBXTargetDependency */,
+			);
+			name = "Astronomy-ObjcTests";
+			productName = "Astronomy-ObjcTests";
+			productReference = 375F898523551AEF002C27D8 /* Astronomy-ObjcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		375F89AE23557D2A002C27D8 /* Astronomy-ObjcNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375F89B623557D2A002C27D8 /* Build configuration list for PBXNativeTarget "Astronomy-ObjcNetworkTests" */;
+			buildPhases = (
+				375F89AB23557D2A002C27D8 /* Sources */,
+				375F89AC23557D2A002C27D8 /* Frameworks */,
+				375F89AD23557D2A002C27D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				375F89B523557D2A002C27D8 /* PBXTargetDependency */,
+			);
+			name = "Astronomy-ObjcNetworkTests";
+			productName = "Astronomy-ObjcNetworkTests";
+			productReference = 375F89AF23557D2A002C27D8 /* Astronomy-ObjcNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		375F895723550D37002C27D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MJR;
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Marlon Raskin";
+				TargetAttributes = {
+					375F895E23550D37002C27D8 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					375F898423551AEF002C27D8 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 375F895E23550D37002C27D8;
+					};
+					375F89AE23557D2A002C27D8 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 375F895E23550D37002C27D8;
+					};
+				};
+			};
+			buildConfigurationList = 375F895A23550D37002C27D8 /* Build configuration list for PBXProject "Astronomy-Objc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 375F895623550D37002C27D8;
+			productRefGroup = 375F896023550D37002C27D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				375F895E23550D37002C27D8 /* Astronomy-Objc */,
+				375F898423551AEF002C27D8 /* Astronomy-ObjcTests */,
+				375F89AE23557D2A002C27D8 /* Astronomy-ObjcNetworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		375F895D23550D37002C27D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375F897223550D39002C27D8 /* LaunchScreen.storyboard in Resources */,
+				375F896F23550D39002C27D8 /* Assets.xcassets in Resources */,
+				375F896D23550D37002C27D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375F898323551AEF002C27D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375F89AD23557D2A002C27D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375F89BB2355AD81002C27D8 /* Rover.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		375F895B23550D37002C27D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375F899B23551FB8002C27D8 /* MJRMarsRoverClient.m in Sources */,
+				37282BA92356C94200D596B3 /* MJRFetchPhotoOperation.m in Sources */,
+				37282BA62356BE5F00D596B3 /* MJRConcurrentOperation.m in Sources */,
+				375F899E23551FD2002C27D8 /* MJRMarsRover.m in Sources */,
+				37282BAD2356F3AF00D596B3 /* NSURL+MJRHTTPS.m in Sources */,
+				375F89BE2356289D002C27D8 /* MJRCache.m in Sources */,
+				375F896423550D37002C27D8 /* AppDelegate.m in Sources */,
+				375F897523550D39002C27D8 /* main.m in Sources */,
+				375F897D23551798002C27D8 /* RoverPhotosCollectionViewController.swift in Sources */,
+				375F89AA2355596E002C27D8 /* MJRPhotoReference.m in Sources */,
+				375F896723550D37002C27D8 /* SceneDelegate.m in Sources */,
+				375F898023551861002C27D8 /* RoverPhotoCollectionViewCell.m in Sources */,
+				375F89A4235522F5002C27D8 /* Camera.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375F898123551AEF002C27D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375F898823551AEF002C27D8 /* Astronomy_ObjcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375F89AB23557D2A002C27D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375F89B223557D2A002C27D8 /* Astronomy_ObjcNetworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		375F898B23551AEF002C27D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 375F895E23550D37002C27D8 /* Astronomy-Objc */;
+			targetProxy = 375F898A23551AEF002C27D8 /* PBXContainerItemProxy */;
+		};
+		375F89B523557D2A002C27D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 375F895E23550D37002C27D8 /* Astronomy-Objc */;
+			targetProxy = 375F89B423557D2A002C27D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		375F896B23550D37002C27D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				375F896C23550D37002C27D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		375F897023550D39002C27D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				375F897123550D39002C27D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		375F897623550D39002C27D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		375F897723550D39002C27D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		375F897923550D39002C27D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6VB3396MT;
+				INFOPLIST_FILE = "Astronomy-Objc/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marlonraskin.Astronomy-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy-Objc/BridgingHeader/Astronomy-Objc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		375F897A23550D39002C27D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6VB3396MT;
+				INFOPLIST_FILE = "Astronomy-Objc/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marlonraskin.Astronomy-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy-Objc/BridgingHeader/Astronomy-Objc-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		375F898D23551AEF002C27D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6VB3396MT;
+				INFOPLIST_FILE = "Astronomy-ObjcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marlonraskin.Astronomy-ObjcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astronomy-Objc.app/Astronomy-Objc";
+			};
+			name = Debug;
+		};
+		375F898E23551AEF002C27D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6VB3396MT;
+				INFOPLIST_FILE = "Astronomy-ObjcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marlonraskin.Astronomy-ObjcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astronomy-Objc.app/Astronomy-Objc";
+			};
+			name = Release;
+		};
+		375F89B723557D2A002C27D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6VB3396MT;
+				INFOPLIST_FILE = "Astronomy-ObjcNetworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marlonraskin.Astronomy-ObjcNetworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astronomy-Objc.app/Astronomy-Objc";
+			};
+			name = Debug;
+		};
+		375F89B823557D2A002C27D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6VB3396MT;
+				INFOPLIST_FILE = "Astronomy-ObjcNetworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marlonraskin.Astronomy-ObjcNetworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astronomy-Objc.app/Astronomy-Objc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		375F895A23550D37002C27D8 /* Build configuration list for PBXProject "Astronomy-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375F897623550D39002C27D8 /* Debug */,
+				375F897723550D39002C27D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375F897823550D39002C27D8 /* Build configuration list for PBXNativeTarget "Astronomy-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375F897923550D39002C27D8 /* Debug */,
+				375F897A23550D39002C27D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375F898C23551AEF002C27D8 /* Build configuration list for PBXNativeTarget "Astronomy-ObjcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375F898D23551AEF002C27D8 /* Debug */,
+				375F898E23551AEF002C27D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375F89B623557D2A002C27D8 /* Build configuration list for PBXNativeTarget "Astronomy-ObjcNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375F89B723557D2A002C27D8 /* Debug */,
+				375F89B823557D2A002C27D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 375F895723550D37002C27D8 /* Project object */;
+}

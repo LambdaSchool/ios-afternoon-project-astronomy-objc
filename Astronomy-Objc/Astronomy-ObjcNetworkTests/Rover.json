@@ -1,0 +1,24 @@
+{
+    "photo_manifest": {
+        "name": "Curiosity",
+        "landing_date": "2012-08-06",
+        "launch_date": "2011-11-26",
+        "status": "active",
+        "max_sol": 2540,
+        "max_date": "2019-09-28",
+        "total_photos": 366206,
+        "photos": [
+            {
+                "sol": 0,
+                "earth_date": "2012-08-06",
+                "total_photos": 3702,
+                "cameras": [
+                    "CHEMCAM",
+                    "FHAZ",
+                    "MARDI",
+                    "RHAZ"
+                ]
+            }
+        ]
+    }
+}
